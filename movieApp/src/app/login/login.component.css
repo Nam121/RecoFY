@@ -1,0 +1,48 @@
+/* Add this CSS to your styles file (e.g., styles.css) */
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+small.form-text {
+  display: block;
+  margin-top: 5px;
+  color: #888;
+}
+
+button.btn-primary {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.btn-primary:disabled {
+  background-color: #b0c4de;
+  cursor: not-allowed;
+}
+
+/* Optional: Add some spacing between the form and other elements on the page */
+body {
+  padding: 20px;
+}

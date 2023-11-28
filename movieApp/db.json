@@ -1,0 +1,70 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "crud": [
+    {
+      "id": 1,
+      "Email": 1,
+      "Name": "",
+      "Mobile": 1,
+      "Age": 1
+    },
+    {
+      "Name": "hp@gmail.com",
+      "Email": "hp@gmail.com",
+      "Mobile": 9175847641,
+      "Age": 22,
+      "id": 2
+    },
+    {
+      "Name": "admin",
+      "Email": "",
+      "Mobile": "",
+      "Age": "",
+      "id": 3
+    },
+    {
+      "Name": "hp@gmail.com",
+      "Email": "hp@gmail.com",
+      "Mobile": 9175847641,
+      "Age": 22,
+      "id": 4
+    },
+    {
+      "Name": "",
+      "Email": "",
+      "Mobile": "",
+      "Age": "",
+      "id": 5
+    },
+    {
+      "Name": "",
+      "Email": "",
+      "Mobile": "",
+      "Age": "",
+      "id": 6
+    },
+    {
+      "Name": "rutu",
+      "Email": "rutu@gmail.com",
+      "Mobile": 2121212,
+      "Age": 21,
+      "id": 7
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

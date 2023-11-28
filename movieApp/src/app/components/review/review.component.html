@@ -1,0 +1,19 @@
+<div class="review-container" *ngIf="movieService.selectedMovie()">
+  <div class="review-box">
+    <img class="trailer-img img-fluid" [src]="sanitizer.bypassSecurityTrustResourceUrl(movieService.selectedMovie()?.poster!)" alt="Trailer Image" />
+    <div class="review-content">
+      <form (ngSubmit)="onSubmitReview()">
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" [formControl]="review" id="floatingTextarea"></textarea>
+          <label for="floatingTextarea">Comments</label>
+        </div>
+        <button type="submit" class="btn btn-outline-primary mt-2">Submit</button>
+      </form>
+      <div class="mt-3 text-white">
+        <p *ngFor="let review of movieService.selectedMovie()?.reviewIds">
+          {{ review.body }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

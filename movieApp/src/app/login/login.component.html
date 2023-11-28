@@ -1,0 +1,25 @@
+<form [formGroup]="loginForm" (submit)="login()">
+  <div class="form-group">
+    <input formControlName="username" type="text" class="form-control" placeholder="Username">
+    <small *ngIf="loginForm.get('username')?.hasError('required')" class="form-text text-muted">
+      Username is required.
+    </small>
+    <small *ngIf="loginForm.get('username')?.hasError('gmail')" class="form-text text-muted">
+      Username must contain 'gmail.c'.
+    </small>
+    
+  </div>
+
+  <div class="form-group">
+    <input formControlName="password" type="password" class="form-control" placeholder="Password">
+    <small *ngIf="loginForm.get('password')?.hasError('required')" class="form-text text-muted">
+      Password is required.
+    </small>
+    <small *ngIf="loginForm.get('password')?.hasError('pattern')" class="form-text text-muted">
+      Password must contain at least one number, one uppercase, and one lowercase letter, and at least 8 characters.
+    </small>
+  </div>
+
+
+  <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid">Log In</button>
+</form>
