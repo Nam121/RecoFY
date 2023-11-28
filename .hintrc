@@ -3,6 +3,7 @@
     "development"
   ],
   "hints": {
+<<<<<<< HEAD
     "axe/text-alternatives": [
       "default",
       {
@@ -59,11 +60,24 @@
         ]
       }
     ],
+=======
+>>>>>>> origin/master
     "axe/forms": [
       "default",
       {
         "label": "off"
       }
+<<<<<<< HEAD
     ]
+=======
+    ],
+    "axe/text-alternatives": [
+      "default",
+      {
+        "document-title": "off"
+      }
+    ],
+    "no-inline-styles": "off"
+>>>>>>> origin/master
   }
 }
